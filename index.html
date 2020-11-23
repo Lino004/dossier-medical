@@ -1,0 +1,824 @@
+<!DOCTYPE html5>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      table, tr, th, td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        padding: 5px;
+        margin-top: 20px;
+        margin-right: 25px;
+      }
+      body {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Tw Cen MT';
+      }
+
+      ol li {
+        font-weight: 700;
+        margin-left: 50px;
+      }
+
+      .en-tete {
+        display: flex;
+        margin: 25px 50px;
+      }
+      .en-tete-element {
+        border: 1px black solid;
+        border-radius: 15px;
+        width: auto;
+      } 
+      .en-tete .first {
+        margin-right: auto;
+        padding: 0px 10px;
+      }
+      .en-tete .second {
+        margin-left: auto;
+        padding: 0px 50px;
+      }
+
+      .theme {
+        text-align: center;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px black solid;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: -10px -10px 5px 0px rgba(0,0,0,0.75);
+      }
+      .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+      .col {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+      }
+      .logo {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="en-tete">
+      <div class="en-tete-element first">
+        <p style="margin-top: 5px;">Référence de l'accident</p>
+      </div>
+      <div class="en-tete-element second">
+        <p style="margin-top: 5px;">N° DOSSIER</p>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <h2>REPUBLIQUE DE COTE D'IVOIRE</h2>
+      <p>---------------------</p>
+      <p>Union - Discipline - Travail</p>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="./img/LOGO_MSHP.PNG" alt="">
+    </div>
+    <!-- Logo -->
+
+    <div class="theme">
+      <h1>DOSSIER MEDICAL</h1>
+    </div>
+
+    <div style="display: flex; margin: 50px 75px;">
+      <div style="border: 1px black solid; margin-right: auto; width: 35%; padding: 0px 10px;">
+        <p style="background-color: yellow;">
+          <span style="color: rgb(99, 30, 163);">
+            <strong>Respecter les 4 principes directeurs pendant tout le processus de prise en charge:</strong>
+          </span>
+          <ul style="margin: -16px 0px; background-color: yellow;">
+            <li>Confidentialité</li>
+            <li>Respect</li>
+            <li>Non discrimination</li>
+            <li>Sécurité</li>
+            <li></li>
+          </ul>
+        </p>
+      </div>
+
+      <div style="border: 1px black solid; margin-left: auto; width: 35%; padding: 0px 10px;">
+        <p style="background-color: yellow; color: red;">
+          Pour tout renseignement complémentaire, veuillez contacter la 
+          <span style="color: rgb(99, 30, 163);">Direction de Coordination du Programme National de Santé de la Mère et de l'Enfant (DCPNSME) :</span> 
+          Immeuble le Général 4ème étage Abidjan Plateau, 
+          <br> <span style="color: black;"><strong>Tel : 20 32 24 15</strong></span></p>
+      </div>
+      
+
+    </div>
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="./img/LOGO_PNSME.PNG" alt="">
+    </div>
+    <!-- Logo -->
+    <hr>
+    <div>
+      <ol>
+        <li>Informations générales</li>
+          <table style="width: 100%;">
+            <tr>
+              <td colspan="3">
+                <div style="display: flex; justify-self: center; align-items: center;">
+                  <p style="margin-right: auto; width: 80%; margin-top: 0; margin-bottom: 0; font-weight: 700;">
+                    L'incident a-t-il été déclaré par le/la survivant(e) ou par la personne qui 
+                    accompagnait le/la survivant(e), en présence de celui-ci/celle-ci ?
+                  </p>
+                  <div style="margin-left: auto; width: 20%; font-weight: 530;">
+                    <input type="checkbox" name="yes"/> <label for="yes">Oui</label>
+                    <input type="checkbox" name="no"/> <label for="no">Non</label>
+                  </div>
+                </div>
+                
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2" style="font-weight: bold;">
+                <p style="margin-bottom: 20px;">Type de centre de santé :</p>
+                <p></p>
+              </td>
+              <td ></td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold;">
+                <p style="margin-top: -55px;">Date / heure de l'examen :</p>
+              </td>
+
+              <td style="font-weight: bold;">
+                <p style="margin-top: -55px;">Noms et prénoms :</p>
+                <p>Date de naissance :</p>
+              </td>
+
+              <td style="font-weight: bold;">
+                <p>
+                  Sexe: 
+                  <input type="checkbox" name="male"/> <label for="male">Masc.</label>
+                  <input type="checkbox" name="female"/> <label for="no">Fém.</label>
+                </p>
+                <p>Situation matrimoniale :</p> 
+                <p>Profession :</p>
+                <p>Quartier de résidence :</p> 
+              </td>
+
+            </tr>
+          </table>
+        <li style="margin-top: 20px;">Récit des faits (écrire toute déclaration relative à l'incident)</li>
+        <div style="height: 1000px;"></div>
+        <hr>
+        <li>Examen & antécédents médicaux</li>
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 26%;">
+                <p style="font-weight: bold;">
+                  Signe de grossesse ? </p>
+                  <input type="checkbox" name="no"/> <label for="no">Non</label> <br>
+                  <input type="checkbox" name="yes"/> <label for="yes">Oui (nb. de semaines: _)</label>
+                
+              </td>
+              <td style="width: 22%;">
+                <p style="font-weight: bold;">
+                  Y a-t-il eu pénétration pénienne au cours de cet incident ?</p>
+                  <input type="checkbox" name="yes"/> <label for="yes">Oui</label>
+                  <input type="checkbox" name="no"/> <label for="no">Non</label>
+                
+              </td>
+              <td style="width: 20%;">
+                <p style="font-weight: bold;">
+                  Statut VIH/sida : </p>
+                  <input type="checkbox" name="positive"/> <label for="yes">Positif</label>
+                  <input type="checkbox" name="negative"/> <label for="no">Négatif</label>
+                  <input type="checkbox" name="unknown"/> <label for="unknown">Inconnu</label>
+                
+              </td>
+              <td style="width: 25%;">
+                <p style="font-weight: bold;">
+                  Stade pubertaire : </p>
+                  <input type="checkbox" name="prepub"/> <label for="prepub">Pré-pubère</label><br>
+                  <input type="checkbox" name="pub"/> <label for="pub">Pubère</label>
+                  <input type="checkbox" name="mature"/> <label for="mature">Mature</label>
+                
+              </td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td>
+                <p>Examen de l'appareil génital</p>
+              </td>
+              <td colspan="3">
+                <input type="checkbox" name="refuse"/> <label for="refuse">Le/la survivant(e) a refusé</label>
+                <input type="checkbox" name="unavailable"/> <label for="unavailable">Non disponible</label>
+                <input type="checkbox" name="unnecessary"/> <label for="unnecessary">Inutile</label>
+                <input type="checkbox" name="no"/> <label for="no">Non</label>
+                <input type="checkbox" name="yes"/> <label for="yes">Oui - Examen externe</label>
+                <input type="checkbox" name="okay"/> <label for="okay">Oui - Examen au spéculum</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Test de grossesse pratiqué ?</p>
+              </td>
+              <td colspan="3">
+                <input type="checkbox" name="refuse"/> <label for="refuse">Le/la survivant(e) a refusé</label>
+                <input type="checkbox" name="unavailable"/> <label for="unavailable">Non disponible</label>
+                <input type="checkbox" name="unnecessary"/> <label for="unnecessary">Inutile</label>
+                <input type="checkbox" name="no"/> <label for="no">Non</label>
+                <input type="checkbox" name="negative"/> <label for="negative">Oui - Négatif</label>
+                <input type="checkbox" name="positive"/> <label for="positive">Oui - Positif</label>
+              </td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td>
+                <p>Test de VIH pratiqué ?</p>
+              </td>
+              <td colspan="3">
+                <input type="checkbox" name="refuse"/> <label for="refuse">Le/la survivant(e) a refusé</label>
+                <input type="checkbox" name="unavailable"/> <label for="unavailable">Non disponible</label>
+                <input type="checkbox" name="unnecessary"/> <label for="unnecessary">Inutile</label>
+                <input type="checkbox" name="no"/> <label for="no">Non</label>
+                <input type="checkbox" name="negative"/> <label for="negative">Oui - Négatif</label>
+                <input type="checkbox" name="positive"/> <label for="positive">Oui - Positif</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Test IST pratiqué ?</p>
+              </td>
+              <td colspan="3">
+                <input type="checkbox" name="refuse"/> <label for="refuse">Le/la survivant(e) a refusé</label>
+                <input type="checkbox" name="unavailable"/> <label for="unavailable">Non disponible</label>
+                <input type="checkbox" name="unnecessary"/> <label for="unnecessary">Inutile</label>
+                <input type="checkbox" name="no"/> <label for="no">Non</label>
+                <input type="checkbox" name="negative"/> <label for="negative">Oui - Négatif</label>
+                <input type="checkbox" name="positive"/> <label for="positive">Oui - Positif</label>
+              </td>
+            </tr>
+          </table>
+        <li style="margin-top: 20px;">Après avoir recueilli le récit des faits, les antécédents et l'examen, préciser les éléments suivants</li>
+          <table style="width: 100%;">
+            <tr>
+              <td>
+                <p>Date / heure de l'incident :</p>
+              </td>
+              <td>
+                <p>Lieu de l'incident :</p>
+              </td>
+              <td>
+                <p>Département : voir plus haut</p>
+                <p>Sous-Préfecture :</p>
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="4">
+                <p>
+                  Type de VBG : <br>
+                  (Sélectionnez la première option correspondante)
+                </p>
+                <input type="checkbox" name="viol"/> <label for="viol">Viol</label> <br>
+                <input type="checkbox" name="agre-sex"/> <label for="agre-sex">Agression sexuelle</label> <br>
+                <input type="checkbox" name="agre-phy"/> <label for="agre-phy">Agression physique</label> <br>
+                <input type="checkbox" name="wedding"/> <label for="wedding">Mariage forcé</label> <br>
+                <input type="checkbox" name="denis"/> <label for="denis">Dénis de ressources, opportunités, ou services</label> <br>
+                <input type="checkbox" name="psy"/> <label for="psy">Violences psychologiques ou émotionnels</label> <br>
+                <input type="checkbox" name="hors-vbg"/> <label for="hors-vbg">Hors VBG</label> <br>
+              </td>
+              <td colspan="2" style="background-color: #f2f2f2;">
+                <p>Cet incident constituait-il une pratique traditionnelle préjudiciable ?</p>
+                <input type="checkbox" name="no"/> <label for="no">Non</label>
+                <input type="checkbox" name="mgf"/> <label for="mgf">MGF</label>
+                <input type="checkbox" name="others"/> <label for="others">Autres</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>
+                  De l'argent, des biens, des avantages et/ou des services ont-ils été fournis en rapport avec cet incident?
+                  <input type="checkbox" name="yes"/> <label for="yes">Oui</label>
+                  <input type="checkbox" name="no"/> <label for="no">Non</label>
+                </p>
+                <p>
+                  Est-ce qu'il y a eu utilisation d'alcool soit des drogues ?
+                  <input type="checkbox" name="yes"/> <label for="yes">Oui</label>
+                  <input type="checkbox" name="no"/> <label for="no">Non</label>
+                </p>
+                <p>
+                  Est-ce que la survivante a été menacée par une arme ?
+                  <input type="checkbox" name="yes"/> <label for="yes">Oui</label>
+                  <input type="checkbox" name="no"/> <label for="no">Non</label>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="background-color: #f2f2f2;">
+                <p>
+                  Est-ce qu'il y a eu enlèvement ? <br>
+                  <input type="checkbox" name="none"/> <label for="none">Aucun</label>
+                  <input type="checkbox" name="conscription"/> <label for="conscription">Conscription forcée</label>
+                  <input type="checkbox" name="trafic"/> <label for="trafic">Trafic</label>
+                  <input type="checkbox" name="traite"/> <label for="traite">Traite</label> <br>
+                  <input type="checkbox" name="others"/> <label for="others">Autres enlèvements/ kidnapping</label>
+                </p>
+                <p>
+                  Contexte sécuritaire de l'incident: <br>
+                  <input type="checkbox" name="ras"/> <label for="ras">RAS</label>
+                  <input type="checkbox"/> <label>Attaque armée / conflit</label>
+                  <input type="checkbox"/> <label>Conflit intercommunautaire</label>
+                  <input type="checkbox"/> <label>Manifestation / rassemblement politique / électoral</label>
+                  <input type="checkbox"/> <label>Barrage</label>
+                  <input type="checkbox"/> <label>Braquage</label>
+                  <input type="checkbox"/> <label>Autre (spécifier)</label>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>Le/la survivant(e) a-t-il/elle déclaré cet incident ailleurs ?</p>
+                <input type="checkbox" name="no"/> <label for="no">Non</label>
+                <input type="checkbox"/> <label>Ne sait pas</label>
+                <input type="checkbox"/> <label>Oui - Non IMSVBG</label>
+                <input type="checkbox"/> <label>Oui - IMSVBG (précisez où & quand) :</label>
+              </td>
+            </tr>
+          </table>
+          <hr>
+        <li style="margin-top: 20px;">Informations sur l'agresseur présumé</li>
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 150px;">
+                <p>Nb. d'agresseurs présumés: </p>
+                <input type="checkbox"> <label>1</label>
+                <input type="checkbox"> <label>2</label>
+                <input type="checkbox"> <label>3</label>
+                <input type="checkbox"> <label>Plus de 3</label>
+                <input type="checkbox"> <label>Inconnu</label>
+              </td>
+              <td>
+                <p>Lien entre l'agresseur présumé et le/la survivant(e): </p>
+                <div style="display: flex;">
+                  <div style="width: 50%; margin-right: 10px;">
+                    <input type="checkbox"> <label>Partenaire intime / ex-partenaire /</label> <br>
+                    <input type="checkbox"> <label>Principale personne s'occupant du/de la survivant(e)</label> <br>
+                    <input type="checkbox"> <label>Membre de la famille (hors conjoint ou personne s'occupant du/de la survivant(e))</label> <br>
+                    <input type="checkbox"> <label>Superviseur / employeur</label> <br>
+                    <input type="checkbox"> <label>Camarade de classe</label> <br>
+                    <input type="checkbox"> <label>Enseignant / responsable scolaire</label> <br>
+                    <input type="checkbox"> <label>Prestataire de services</label>
+                  </div>
+                  <div style="">
+                    <input type="checkbox"> <label>Colocataire</label> <br>
+                    <input type="checkbox"> <label>Ami de la famille / voisin</label> <br>
+                    <input type="checkbox"> <label>Autre réfugié / PDI / rapatrié</label> <br>
+                    <input type="checkbox"> <label>Autre membre de la communauté résidente</label> <br>
+                    <input type="checkbox"> <label>Inconnu</label> <br>
+                    <input type="checkbox"> <label>Sans lien</label> <br>
+                    <input type="checkbox"> <label>Autres</label> <br>
+                    <p>(préciser)__________________</p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>Profession de l'agresseur présumé :</p>
+                <input type="checkbox"> <label for="">Planteur/Agriculteur</label>
+                <input type="checkbox"> <label for="">Etudiant</label>
+                <input type="checkbox"> <label for="">Fonctionnaire</label>
+                <input type="checkbox"> <label for="">Commerçant/propriétaire d'entreprise</label>
+                <input type="checkbox"> <label for="">Militaire (FRCI)</label>
+                <input type="checkbox"> <label for="">Dozos</label>
+                <input type="checkbox"> <label for="">Mercenaire/Milicien</label>
+                <input type="checkbox"> <label for="">Policier/Gendarme</label>
+                <input type="checkbox"> <label for="">Dignitaire religieux</label>
+                <input type="checkbox"> <label for="">Enseignant</label>
+                <input type="checkbox"> <label for="">Employé des Nations Unies</label>
+                <input type="checkbox"> <label for="">Casque Blue</label>
+                <input type="checkbox"> <label for="">Bénévole communautaire</label>
+                <input type="checkbox"> <label for="">Prestataire de soins</label>
+                <input type="checkbox"> <label for="">Employé d'une ONG</label>
+                <input type="checkbox"> <label for="">Leader communautaire</label>
+                <input type="checkbox"> <label for="">Inconnue</label>
+                <input type="checkbox"> <label for="">Sans emploi</label>
+                <input type="checkbox"> <label for="">Autre (précisez) :</label>
+              </td>
+            </tr>
+          </table>
+          <div style="height: 500px;"></div>
+          <hr>
+        <li style="margin-top: 20px;">Traitements prescrits</li>
+          <table style="width: 100%;">
+            <tr style="background-color: #f2f2f2;">
+              <td>
+                Traitement IST : 
+              </td>
+              <td>
+                <div style="display: flex; justify-content: space-between;">
+                  <div><input type="checkbox"> <label>Oui</label></div>
+                  <div><input type="checkbox"> <label>Non</label></div>
+                  <div><input type="checkbox"> <label>Le/la survivant(e) a refusé</label></div>
+                  <div><input type="checkbox"> <label>Inutile</label></div>
+                  <div><input type="checkbox"> <label>Non disponible</label></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Contraception d’urgence :  
+              </td>
+              <td>
+                <div style="display: flex; justify-content: space-between;">
+                  <div><input type="checkbox"> <label>Oui</label></div>
+                  <div><input type="checkbox"> <label>Non</label></div>
+                  <div><input type="checkbox"> <label>Le/la survivant(e) a refusé</label></div>
+                  <div><input type="checkbox"> <label>Inutile</label></div>
+                  <div><input type="checkbox"> <label>Non disponible</label></div>
+                </div>
+              </td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td>
+                Traitement des blessures : 
+              </td>
+              <td>
+                <div style="display: flex; justify-content: space-between;">
+                  <div><input type="checkbox"> <label>Oui</label></div>
+                  <div><input type="checkbox"> <label>Non</label></div>
+                  <div><input type="checkbox"> <label>Le/la survivant(e) a refusé</label></div>
+                  <div><input type="checkbox"> <label>Inutile</label></div>
+                  <div><input type="checkbox"> <label>Non disponible</label></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Prophylaxie antitétanique :  
+              </td>
+              <td>
+                <div style="display: flex; justify-content: space-between;">
+                  <div><input type="checkbox"> <label>Oui</label></div>
+                  <div><input type="checkbox"> <label>Non</label></div>
+                  <div><input type="checkbox"> <label>Le/la survivant(e) a refusé</label></div>
+                  <div><input type="checkbox"> <label>Inutile</label></div>
+                  <div><input type="checkbox"> <label>Non disponible</label></div>
+                </div>
+              </td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td>
+                Vaccin contre l’hépatite B : 
+              </td>
+              <td>
+                <div style="display: flex; justify-content: space-between;">
+                  <div><input type="checkbox"> <label>Oui</label></div>
+                  <div><input type="checkbox"> <label>Non</label></div>
+                  <div><input type="checkbox"> <label>Le/la survivant(e) a refusé</label></div>
+                  <div><input type="checkbox"> <label>Inutile</label></div>
+                  <div><input type="checkbox"> <label>Non disponible</label></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Prophylaxie post-exposition VIH :
+              </td>
+              <td>
+                <div style="display: flex; justify-content: space-between;">
+                  <div><input type="checkbox"> <label>Oui</label></div>
+                  <div><input type="checkbox"> <label>Non</label></div>
+                  <div><input type="checkbox"> <label>Le/la survivant(e) a refusé</label></div>
+                  <div><input type="checkbox"> <label>Inutile</label></div>
+                  <div><input type="checkbox"> <label>Non disponible</label></div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        <li style="margin-top: 20px;">Mesures prévues/mesures prises : Toute action/activité relative à cette
+          déclaration.</li>
+          <table style="width: 100%;">
+            <tr style="background-color: #f2f2f2;">
+              <td colspan="2">
+                <p style="font-weight: bold;">
+                  Qui vous a adressé ce/cette survivant(e) ?</p>
+                <div>
+                  <input type="checkbox"> <label>S’est présenté(e) de sa propre initiative</label>
+                  <input type="checkbox"> <label>Autre services de santé</label>
+                  <input type="checkbox"> <label>Service de soutien psychosocial</label>
+                </div>
+                <div style="display: flex;">
+                  <div style="width: 30%;">
+                    <div><input type="checkbox"> <label>Police/Autre acteur du secteur de la sécurité</label></div>
+                    <div><input type="checkbox"> <label>Leader de la communauté</label></div>
+                    <div><input type="checkbox"> <label>Acteur humanitaire/ONG</label></div>
+                  </div>
+                  <div>
+                    <div><input type="checkbox"> <label>Programme de soutien aux moyens de subsistance</label></div>
+                    <div><input type="checkbox"> <label>Enseignant/Responsable scolaire</label></div>
+                    <div><input type="checkbox"> <label>Autre service public</label></div>
+                    <div><input type="checkbox"> <label>Autre (précisez) :</label></div>
+                  </div>
+                  <div>
+                    <div><input type="checkbox"> <label>Action communautaire</label></div>
+                    <div><input type="checkbox"> <label>Services juridiques</label></div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="border-right: none; width: 150px; text-align: center;">
+                <p style="font-weight: bold;">
+                  Avez-vous orienté le/la
+                  survivant(e) vers des
+                  services de soutien</p>
+              </td>
+              <td style="border-left: none;">
+                <div style="display: flex; flex-wrap: wrap;">
+                  <div><input type="checkbox"> <label>Oui</label></div>
+                  <div><input type="checkbox"> <label>Non – Vous avez assuré ces services</label></div>
+                  <div><input type="checkbox"> <label>Non – Le/la survivant(e) a déjà bénéficié de ces services </label></div>
+                  <div><input type="checkbox"> <label>Non – Le/la survivant(e) a refusé</label></div>
+                  <div><input type="checkbox"> <label>Non – Le service est inutile</label></div>
+                  <div><input type="checkbox"> <label>Non – Le service n’est pas disponible </label></div>
+                  <div><input type="checkbox"> <label>Autre: </label></div>
+                </div>
+              </td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td style="border-right: none; width: 150px; text-align: center;">
+                <p style="font-weight: bold;">
+                  Avez-vous orienté
+                  le/la survivant(e) vers
+                  des services de
+                  sécurité ?</p>
+              </td>
+              <td style="border-left: none;">
+                <div style="display: flex; flex-wrap: wrap;">
+                  <div><input type="checkbox"> <label>Oui</label></div>
+                  <div><input type="checkbox"> <label>Non – Vous avez assuré ces services</label></div>
+                  <div><input type="checkbox"> <label>Non – Le/la survivant(e) a déjà bénéficié de ces services </label></div>
+                  <div><input type="checkbox"> <label>Non – Le/la survivant(e) a refusé</label></div>
+                  <div><input type="checkbox"> <label>Non – Le service est inutile</label></div>
+                  <div><input type="checkbox"> <label>Non – Le service n’est pas disponible </label></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2" style="border-right: none; width: 150px; text-align: center;">
+                <p style="font-weight: bold;">
+                  Avez-vous orienté le/la
+                  survivant(e) vers des
+                  services médicaux plus
+                  spécialisés ?
+                  </p>
+              </td>
+              <td style="border-left: none;">
+                <div style="display: flex; flex-wrap: wrap;">
+                  <div><input type="checkbox"> <label>
+                    Oui (Précisez la raison, parmi les suivantes) : </label></div>
+                  <div><input type="checkbox"> <label>Soins prénataux</label></div>
+                  <div><input type="checkbox"> <label>Vaccin</label></div>
+                  <div><input type="checkbox"> <label>Planification familiale</label></div>
+                  <div><input type="checkbox"> <label>Centre plus proche</label></div>
+                  <div><input type="checkbox"> <label>Chirurgie</label></div>
+                  <div><input type="checkbox"> <label>Conseil et dépistage</label></div>
+                  <div><input type="checkbox"> <label>Autre traitement de pointe</label></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="border-left: none;">
+                <div style="display: flex; flex-wrap: wrap;">
+                  <div><input type="checkbox"> <label>
+                    Non (Précisez la raison, parmi les suivantes) : </label></div>
+                  <div><input type="checkbox"> <label>Vous avez assuré ces services</label></div>
+                  <div><input type="checkbox"> <label>Le/la survivant(e) a déjà bénéficié de ces services</label></div>
+                  <div><input type="checkbox"> <label>Le/la survivant(e) a refusé</label></div>
+                  <div><input type="checkbox"> <label>Le service est inutile</label></div>
+                  <div><input type="checkbox"> <label>Le service n’est pas disponible</label></div>
+                </div>
+              </td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td colspan="2">
+                <p>
+                  <strong>Le/la survivant(e) souhaite-t-il/elle engager des poursuites judiciaires ?</strong>
+                  <input type="checkbox"> <label>Oui</label>
+                  <input type="checkbox"> <label>Non</label>
+                  <input type="checkbox"> <label>N’a pas encore décidé au moment de la déclaration</label>
+                </p>
+              </td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td colspan="2">
+                <p>
+                  <strong>Des preuves ont-elles été recueillies ?</strong>
+                  <input type="checkbox"> <label>Non – Le/la survivant(e) a refusé</label>
+                  <input type="checkbox"> <label>Non – Le service est inutile</label>
+                  <input type="checkbox"> <label>Non – Le service n’est pas disponible</label>
+                  <input type="checkbox"> <label>Oui (précisez) :</label>
+                </p>
+              </td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td colspan="2">
+                <p>
+                  <strong>Le/la survivant(e) a-t-il/elle demandé un certificat médical ?</strong>
+                  <input type="checkbox"> <label>Oui</label>
+                  <input type="checkbox"> <label>Non</label>
+              </td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td colspan="2">
+                <p>
+                  <strong>Le certificat médical a-t-il été rédigé pour le/la survivant(e) ? </strong>
+                  <input type="checkbox"> <label>Oui</label>
+                  <input type="checkbox"> <label>Non</label>
+              </td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td colspan="2">
+                <p>
+                  <strong>Une visite de suivi a-t-elle été prévue ?</strong>
+                  <input type="checkbox"> <label>Oui</label>
+                  <input type="checkbox"> <label>Non</label>
+              </td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td colspan="2">
+                <p>
+                  <strong>La procédure suivie au cours de l’examen médical a-t-elle été expliquée avant de commencer ? </strong>
+                  <input type="checkbox"> <label>Oui</label>
+                  <input type="checkbox"> <label>Non</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>
+                  <strong>Le/la survivant(e) a-t-il/elle donné son consentement préalable à l’examen ? </strong>
+                  <input type="checkbox"> <label>Oui</label>
+                  <input type="checkbox"> <label>Non</label>
+              </td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td colspan="2">
+                <p>
+                  <strong>Les options de référence offertes au/à la survivant(e) lui ont-elles été clairement expliquées ? </strong>
+                  <input type="checkbox"> <label>Oui</label>
+                  <input type="checkbox"> <label>Non</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>
+                  <strong>La déclaration de consentement à la divulgation d’informations a-t-elle été expliquée
+                    et remplie par le/la survivant(e) ou son tuteur ? </strong>
+                  <input type="checkbox"> <label>Oui</label>
+                  <input type="checkbox"> <label>Non</label>
+              </td>
+            </tr>
+          </table>
+        <hr>
+        <p style="font-weight: bold; text-decoration: underline;">
+          Autres Notes</p>
+        <div style="height: 1000px;"></div>
+        <hr>
+        <h3 style="text-align: center;">
+          <span style="text-decoration: underline;">ANNEXE</span>:
+          <span style="font-weight: normal;">NOTES D’ORIENTATION POUR LE CLASSEMENT DE L’INCIDENT SELON LES TYPES
+            DETERMINES PAR LE GBV-IMS</span>
+        </h3>
+        <table style="width: 100%;">
+          <tr style="background-color: #f2f2f2;">
+            <td>
+              <ul style="padding-left: 0;">
+                <li style="margin-left: 25px; font-weight: normal;">
+                  Pour déterminer à quel type de VBG correspond l’incident qui vous est rapporté par le/la survivant(e), posez-vous dans
+                  l’ordre les questions suivantes
+                </li>
+                <li style="margin-left: 25px; font-weight: normal;">
+                  Si la réponse à une question est « non » en fonction de la description de l’incident déclaré, passez à la question
+                  suivante dans la liste. Arrêtez-vous à la première question dont la réponse est « oui » en fonction de la description de
+                  l’incident déclaré. Le type de VBG qui correspond à cette question devrait être choisi pour classer l’incident.1
+                </li>
+                <li style="margin-left: 25px; font-weight: normal;">
+                  Seuls sont consignés dans le GBVIMS les incidents directement déclarés par le/la survivant(e) (ou par le tuteur du/de la
+                  survivant(e) lorsque celui-ci ou celle-ci est un(e) enfant ou n’est pas capable de déclarer l’incident en raison d’un
+                  handicap) dans le contexte de la prestation de services. Dès lors, un incident ne devrait pas être consigné pour les
+                  besoins du GBVIMS si la victime est déjà morte au moment de la déclaration des faits.2
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ol style="padding-left: 0;">
+                <li style="font-weight: normal;">Y a-t-il eu <strong>pénétration</strong> au cours de l’incident déclaré ?
+                  <ul style="padding-left: 0;">
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si oui ➔ classez la VBG dans la catégorie « <strong style="text-decoration: underline;">Viol</strong> ».
+                    </li>
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si non ➔ passez au type de VBG suivant dans la liste.
+                    </li>
+                  </ul>
+                </li>
+                <li style="font-weight: normal;">Y a-t-il eu <strong>un contact sexuel non désiré</strong> au cours de l’incident déclaré ?
+                  <ul style="padding-left: 0;">
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si oui ➔ classez la VBG dans la catégorie « <strong style="text-decoration: underline;">Agression sexuelle</strong> ».
+                    </li>
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si non ➔ passez au type de VBG suivant dans la liste.
+                    </li>
+                  </ul>
+                </li>
+                <li style="font-weight: normal;">Y a-t-il eu une <strong>agression physique </strong> au cours de l’incident déclaré ?
+                  <ul style="padding-left: 0;">
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si oui ➔ classez la VBG dans la catégorie « <strong style="text-decoration: underline;">Agression physique</strong> ».
+                    </li>
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si non ➔ passez au type de VBG suivant dans la liste.
+                    </li>
+                  </ul>
+                </li>
+                <li style="font-weight: normal;">L’incident était-il un cas de <strong>mariage forcé</strong> ?
+                  <ul style="padding-left: 0;">
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si oui ➔ classez la VBG dans la catégorie « <strong style="text-decoration: underline;">Mariage forcé</strong> ».
+                    </li>
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si non ➔ passez au type de VBG suivant dans la liste.
+                    </li>
+                  </ul>
+                </li>
+                <li style="font-weight: normal;">Y a-t-il eu un <strong>déni de ressources, d’opportunités ou de services</strong> au cours de l’incident signalé ?
+                  <ul style="padding-left: 0;">
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si oui ➔ classez la VBG dans la catégorie « <strong style="text-decoration: underline;">Déni de ressources, d’opportunités ou de services</strong> ».
+                    </li>
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si non ➔ passez au type de VBG suivant dans la liste.
+                    </li>
+                  </ul>
+                </li>
+                <li style="font-weight: normal;">Y a-t-il eu un <strong> violences psychologiques / émotionnelles</strong> au cours de l’incident signalé ?
+                  <ul style="padding-left: 0;">
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si oui ➔ classez la VBG dans la catégorie « <strong style="text-decoration: underline;">Violences psychologiques / émotionnelles</strong> ».
+                    </li>
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si non ➔ passez au type de VBG suivant dans la liste.
+                    </li>
+                  </ul>
+                </li>
+                <li style="font-weight: normal;">L’incident signalé est-il un cas de GBV ?
+                  <ul style="padding-left: 0;">
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si oui ➔ Recommencez à la question n°1 et tentez de déterminer de nouveau le type de VBG (<i>
+                        si vous avez tenté de
+                      classer la VBG à plusieurs reprises, demandez l’aide de votre superviseur ou de votre personne contact
+                      GBVIMS
+                      </i>)                      
+                    </li>
+                    <li style="margin-left: 25px; font-weight: normal;">
+                      Si non ➔ classez la violence dans la catégorie « <strong style="text-decoration: underline;">Hors VBG</strong> »
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+        <!-- Logo -->
+        <div style="display: flex; justify-content: space-around;">
+          <img width="80" src="./img/LOGO_PNSME.PNG" alt="LOGO_PNSME">
+          <img width="80" src="./img/LOGO_PNLS.PNG" alt="LOGO_PNLS">
+          <img width="100" src="./img/LOGO_USA-CI.PNG" alt="LOGO_USA-CI">
+        </div>
+        <!-- Logo -->
+        <div style="font-size: 10; border: gray solid 1.5px; padding: 10px; text-align: center;">
+          La reproduction de ce document est financée par l’accord de financement N°U2GPS000632 du Centers for Disease Control and Prevention (CDC) en Côte d'Ivoire, au titre du programme PEPFAR. Le
+          contenu du document relève de la seule responsabilité des auteurs et ne représente pas forcément le point de vue officiel du CDC, ni du PEPFAR ni du Gouvernement Américain».
+        </div>
+    </div>
+  </body>
+</html>
